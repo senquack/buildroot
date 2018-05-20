@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-LIBOPK_VERSION = v1.0.6
+LIBOPK_VERSION = master
 LIBOPK_SITE = $(call github,gcwnow,libopk,$(LIBOPK_VERSION))
 LIBOPK_DEPENDENCIES = zlib libini
 LIBOPK_INSTALL_STAGING = YES
