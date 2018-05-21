@@ -3,7 +3,12 @@
 # etna_viv
 #
 ################################################################################
-ETNA_VIV_VERSION = master
+
+# Last commit before source code was deprecated and moved to attic/
+#  and galcore headers were made a submodule from another repo,
+#  breaking building from fetched tarball.
+ETNA_VIV_VERSION = 7f079cc0893331f68e8303e35bbded6a87807233
+
 ETNA_VIV_SITE = $(call github,laanwj,etna_viv,$(ETNA_VIV_VERSION))
 ETNA_VIV_INSTALL_STAGING = YES
 # Currently, etna_viv only builds static libs, no point in installing those
