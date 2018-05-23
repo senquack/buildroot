@@ -4,8 +4,11 @@
 #
 ################################################################################
 
-HOSTAPD_VERSION = 0.8_rtw_r7475.20130812
-HOSTAPD_SITE = http://crapouillou.net/~paul
+# hostapd for Realtek RTL8188
+# mirror of https://github.com/jenssegers/RTL8188-hostapd
+HOSTAPD_VERSION = v2.0
+HOSTAPD_SITE = $(call github,senquack,RTL8188-hostapd,$(HOSTAPD_VERSION))
+
 HOSTAPD_SUBDIR = hostapd
 HOSTAPD_CONFIG = $(HOSTAPD_DIR)/$(HOSTAPD_SUBDIR)/.config
 HOSTAPD_DEPENDENCIES = libnl
